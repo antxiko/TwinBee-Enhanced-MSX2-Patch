@@ -1,0 +1,8 @@
+# No se distribuye ninguna ROM: cada cual pone su volcado
+*.rom
+*.zip
+work/
+__pycache__/
+*.pyc
+.forja/
+.DS_Store
