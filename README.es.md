@@ -11,13 +11,13 @@ la Konami Game Collection.
 
 **La web**: https://antxiko.github.io/TwinBee-Enhanced-MSX2-Patch/es/ · **Descarga el parche**: [ips/twinbee_enhanced_msx2.ips](ips/twinbee_enhanced_msx2.ips)
 
-IPS de **134.791** bytes · **5** fases y **5** jefes redibujados · MegaROM de **256 KB** con SCC · no se distribuye ninguna ROM
+IPS de **134.795** bytes · **5** fases y **5** jefes redibujados · MegaROM de **256 KB** con SCC · no se distribuye ninguna ROM
 
 | | |
 |---|---|
-| el parche | `ips/twinbee_enhanced_msx2.ips`, 134.791 bytes |
+| el parche | `ips/twinbee_enhanced_msx2.ips`, 134.795 bytes |
 | entrada | tu volcado de *Twin Bee*, 32.768 bytes, sha256 `02bdce8ceafe6af05a45b61a689e78807551df663afd152090f7cd9cac827dd4` |
-| salida | una MegaROM de 256 KB, mapper Konami SCC, sha256 `c16979326e8df9277f8ab34850683559fd7eb4e412645b1459cbde865bae4f67` |
+| salida | una MegaROM de 256 KB, mapper Konami SCC, sha256 `b7367f637c51c9c699b727176c82dd5178109528015598a41cd36d57996242fe` |
 | hace falta | un MSX2 con 128 KB de VRAM y el SCC (un cartucho flash con SCC, como un MegaFlashROM SCC+ o un Carnivore2) |
 | probado | en openMSX (MSX2 con C-BIOS): las cinco fases jugadas hasta cada jefe; **todavia no en un MSX real** |
 

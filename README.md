@@ -11,13 +11,13 @@ sounds.
 
 **The website**: https://antxiko.github.io/TwinBee-Enhanced-MSX2-Patch/ · **Download the patch**: [ips/twinbee_enhanced_msx2.ips](ips/twinbee_enhanced_msx2.ips)
 
-**134,791**-byte IPS · **5** stages and **5** bosses redrawn · **256 KB** MegaROM with SCC · no ROM distributed
+**134,795**-byte IPS · **5** stages and **5** bosses redrawn · **256 KB** MegaROM with SCC · no ROM distributed
 
 | | |
 |---|---|
-| the patch | `ips/twinbee_enhanced_msx2.ips`, 134,791 bytes |
+| the patch | `ips/twinbee_enhanced_msx2.ips`, 134,795 bytes |
 | input | your *Twin Bee* dump, 32,768 bytes, sha256 `02bdce8ceafe6af05a45b61a689e78807551df663afd152090f7cd9cac827dd4` |
-| output | a 256 KB MegaROM, Konami SCC mapper, sha256 `c16979326e8df9277f8ab34850683559fd7eb4e412645b1459cbde865bae4f67` |
+| output | a 256 KB MegaROM, Konami SCC mapper, sha256 `b7367f637c51c9c699b727176c82dd5178109528015598a41cd36d57996242fe` |
 | needs | an MSX2 with 128 KB of VRAM and the SCC (a flash cartridge with SCC, such as a MegaFlashROM SCC+ or a Carnivore2) |
 | tested | in openMSX (MSX2 with C-BIOS): the five stages played through to each boss; **not yet on real hardware** |
 

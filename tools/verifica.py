@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.join(RAIZ, "tools"))
 import ips  # noqa: E402
 
 SHA_ORIGINAL = "02bdce8ceafe6af05a45b61a689e78807551df663afd152090f7cd9cac827dd4"
-SHA_MEJORADA = "c16979326e8df9277f8ab34850683559fd7eb4e412645b1459cbde865bae4f67"
+SHA_MEJORADA = "b7367f637c51c9c699b727176c82dd5178109528015598a41cd36d57996242fe"
 
 
 def main(rom):
