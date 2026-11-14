@@ -11,15 +11,15 @@ la Konami Game Collection.
 
 **La web**: https://antxiko.github.io/TwinBee-Enhanced-MSX2-Patch/es/ · **Descarga el parche**: [ips/twinbee_enhanced_msx2.ips](https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch/raw/main/ips/twinbee_enhanced_msx2.ips)
 
-IPS de **134.795** bytes · **5** fases y **5** jefes redibujados · MegaROM de **256 KB** con SCC · no se distribuye ninguna ROM
+IPS de **140.977** bytes · **5** fases y **5** jefes redibujados · MegaROM de **256 KB** con SCC · no se distribuye ninguna ROM
 
 | | |
 |---|---|
-| el parche | `ips/twinbee_enhanced_msx2.ips`, 134.795 bytes |
+| el parche | `ips/twinbee_enhanced_msx2.ips`, 140.977 bytes |
 | entrada | tu volcado de *Twin Bee*, 32.768 bytes, sha256 `02bdce8ceafe6af05a45b61a689e78807551df663afd152090f7cd9cac827dd4` |
-| salida | una MegaROM de 256 KB, mapper Konami SCC, sha256 `b7367f637c51c9c699b727176c82dd5178109528015598a41cd36d57996242fe` |
+| salida | una MegaROM de 256 KB, mapper Konami SCC, sha256 `a36c3fffc02a080bb341ed1fded4609107cc32d71db6a0875b95f0e551d40551` |
 | hace falta | un MSX2 con 128 KB de VRAM y el SCC (un cartucho flash con SCC, como un MegaFlashROM SCC+ o un Carnivore2) |
-| probado | en openMSX (MSX2 con C-BIOS): las cinco fases jugadas hasta cada jefe; **todavia no en un MSX real** |
+| probado | en openMSX, con C-BIOS y con un Sony HB-F900: el juego entero, las cinco fases y sus jefes; **todavia no en un MSX real** |
 
 ## En imagenes
 
@@ -49,6 +49,11 @@ IPS de **134.795** bytes · **5** fases y **5** jefes redibujados · MegaROM de 
   Konami de los juegos posteriores, el de la doble ola, apareciendo como en
   *Salamander*.
 - **Los creditos** del final incluyen los graficos.
+- **La pausa** (F1) muestra el marcador en un recuadro negro: la fase, el
+  record, la puntuacion y las vidas que quedan.
+- **Cuando mas de ocho sprites coinciden en una linea** se turnan
+  parpadeando en vez de desaparecer, y las dos mitades de cada sprite de tres
+  colores nunca se separan.
 
 ## Aplicarlo
 
@@ -73,9 +78,11 @@ mapper si el cargador lo pregunta.
 
 - Con el jefe en pantalla el juego baja a veces de 30 cuadros por segundo: el
   driver de musica SCC cuesta mucho mas que el reproductor PSG original.
-- La fase 5 deja muy pocos patrones de sprite libres: sus nubes son blancas,
-  como en el original, y cuando hay muchos enemigos distintos en pantalla
-  alguno sale con menos colores.
+- En los momentos mas cargados algun sprite parpadea o sale un instante con
+  menos colores.
+- Los objetos que quedan en el suelo (el arma, la estrella que limpia la
+  pantalla y la vida extra) se ven con el dibujo del enemigo de tierra de la
+  fase.
 - Al cambiar de fase la pantalla se apaga medio segundo mientras se cargan los
   graficos nuevos.
 - La partida a dos jugadores no esta probada.

@@ -11,15 +11,15 @@ sounds.
 
 **The website**: https://antxiko.github.io/TwinBee-Enhanced-MSX2-Patch/ · **Download the patch**: [ips/twinbee_enhanced_msx2.ips](https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch/raw/main/ips/twinbee_enhanced_msx2.ips)
 
-**134,795**-byte IPS · **5** stages and **5** bosses redrawn · **256 KB** MegaROM with SCC · no ROM distributed
+**140,977**-byte IPS · **5** stages and **5** bosses redrawn · **256 KB** MegaROM with SCC · no ROM distributed
 
 | | |
 |---|---|
-| the patch | `ips/twinbee_enhanced_msx2.ips`, 134,795 bytes |
+| the patch | `ips/twinbee_enhanced_msx2.ips`, 140,977 bytes |
 | input | your *Twin Bee* dump, 32,768 bytes, sha256 `02bdce8ceafe6af05a45b61a689e78807551df663afd152090f7cd9cac827dd4` |
-| output | a 256 KB MegaROM, Konami SCC mapper, sha256 `b7367f637c51c9c699b727176c82dd5178109528015598a41cd36d57996242fe` |
+| output | a 256 KB MegaROM, Konami SCC mapper, sha256 `a36c3fffc02a080bb341ed1fded4609107cc32d71db6a0875b95f0e551d40551` |
 | needs | an MSX2 with 128 KB of VRAM and the SCC (a flash cartridge with SCC, such as a MegaFlashROM SCC+ or a Carnivore2) |
-| tested | in openMSX (MSX2 with C-BIOS): the five stages played through to each boss; **not yet on real hardware** |
+| tested | in openMSX, with C-BIOS and with a Sony HB-F900: the whole game, the five stages and their bosses; **not yet on real hardware** |
 
 ## In pictures
 
@@ -49,6 +49,11 @@ sounds.
   the later games, with its double wave, appearing as it does in
   *Salamander*.
 - **The credits** at the end of the game add the graphics.
+- **The pause** (F1) shows the scoreboard in a black box: stage, high
+  score, score and lives left.
+- **When more than eight sprites share a line** they take turns
+  flickering instead of vanishing, and the two halves of each three-colour
+  sprite are never split.
 
 ## Applying it
 
@@ -73,9 +78,10 @@ mapper if the loader asks for it.
 
 - With the boss on screen the game sometimes drops below 30 frames per
   second: the SCC music driver costs much more than the original PSG player.
-- Stage 5 leaves very few free sprite patterns: its clouds are white, as in
-  the original, and when many different enemies are on screen some of them
-  show fewer colours.
+- In the busiest moments a few sprites flicker or briefly show fewer
+  colours.
+- The items left on the ground (the weapon, the star that clears the
+  screen and the extra life) show the drawing of the stage's ground enemy.
 - Changing stage blanks the screen for half a second while the new graphics
   are loaded.
 - The two-player game has not been tested.
