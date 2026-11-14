@@ -1,17 +1,33 @@
-# Twin Bee Enhanced (MSX2) — pixel scroll, SCC music and Guantxip's graphics
+<header class="top">
+<img src="imagenes/00-titulo.png" alt="The title screen of Twin Bee Enhanced">
+<h1>Twin Bee Enhanced (MSX2)</h1>
+<p class="claim">Konami&rsquo;s <b>Twin Bee</b> (1986), the 32 KB MSX cartridge, turned into an enhanced <b>MSX2</b> game: the scenery scrolls <b>a pixel at a time</b> on a bitmap screen, the five stages and their five bosses wear <b>Guantxip&rsquo;s graphics</b>, the sprites show <b>three colours per line</b> and the music plays on the <b>SCC</b>, as in the Konami Game Collection.</p>
+<p><a class="descarga" href="https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch/raw/main/ips/twinbee_enhanced_msx2.ips">Download the IPS patch</a></p>
+<div class="ficha"><span>Konami &middot; 1986 &middot; RC-740</span><span>unofficial patch</span><span><b>MSX2</b> + SCC</span><span>no ROM distributed</span><span><a href="https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch">The repository</a></span></div>
+</header>
 
-*(También disponible [en castellano](es/index.html).)*
+<div class="cifras"><div class="cifra"><b>140,977</b><span>bytes of IPS</span></div><div class="cifra"><b>5</b><span>stages redrawn</span></div><div class="cifra"><b>5</b><span>bosses redrawn</span></div><div class="cifra"><b>256 KB</b><span>MegaROM with SCC</span></div><div class="cifra"><b>0</b><span>ROMs distributed</span></div></div>
 
-An unofficial patch that turns **Twin Bee** (Konami, 1986), the 32 KB MSX
-cartridge, into an enhanced version for **MSX2**: the scenery scrolls a pixel
-at a time on a bitmap screen, the five stages and their five bosses wear new
-graphics adapted by **Guantxip**, the sprites show three colours per line, and
-the music plays on the **SCC**, the way the Konami Game Collection version
-sounds.
+## In pictures
 
-**The website**: https://antxiko.github.io/TwinBee-Enhanced-MSX2-Patch/ · **Download the patch**: [ips/twinbee_enhanced_msx2.ips](https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch/raw/main/ips/twinbee_enhanced_msx2.ips)
+<div class="galeria">
+<figure><img src="imagenes/01-konami.png" alt="The Konami logo with its double wave, appearing as in Salamander" loading="lazy"><figcaption><b>The Konami logo</b> with its double wave, appearing as in <i>Salamander</i></figcaption></figure>
+<figure><img src="imagenes/00-titulo.png" alt="The title, with the new logo" loading="lazy"><figcaption><b>The title</b>, with the new logo</figcaption></figure>
+<figure><img src="imagenes/03-fase1.png" alt="Stage 1" loading="lazy"><figcaption><b>Stage 1</b></figcaption></figure>
+<figure><img src="imagenes/04-jefe1.png" alt="The boss of stage 1" loading="lazy"><figcaption><b>The boss of stage 1</b></figcaption></figure>
+<figure><img src="imagenes/05-fase2.png" alt="Stage 2" loading="lazy"><figcaption><b>Stage 2</b></figcaption></figure>
+<figure><img src="imagenes/06-jefe2.png" alt="The boss of stage 2" loading="lazy"><figcaption><b>The boss of stage 2</b></figcaption></figure>
+<figure><img src="imagenes/07-fase3.png" alt="Stage 3" loading="lazy"><figcaption><b>Stage 3</b></figcaption></figure>
+<figure><img src="imagenes/08-jefe3.png" alt="The boss of stage 3" loading="lazy"><figcaption><b>The boss of stage 3</b></figcaption></figure>
+<figure><img src="imagenes/09-fase4.png" alt="Stage 4" loading="lazy"><figcaption><b>Stage 4</b></figcaption></figure>
+<figure><img src="imagenes/10-jefe4.png" alt="The boss of stage 4" loading="lazy"><figcaption><b>The boss of stage 4</b></figcaption></figure>
+<figure><img src="imagenes/11-fase5.png" alt="Stage 5" loading="lazy"><figcaption><b>Stage 5</b></figcaption></figure>
+<figure><img src="imagenes/12-jefe5.png" alt="The boss of stage 5" loading="lazy"><figcaption><b>The boss of stage 5</b></figcaption></figure>
+<figure><img src="imagenes/13-pausa.png" alt="The pause (F1), with the scoreboard" loading="lazy"><figcaption><b>The pause</b> (F1), with the scoreboard</figcaption></figure>
+<figure><img src="imagenes/14-creditos.png" alt="The credits, with the graphics" loading="lazy"><figcaption><b>The credits</b>, with the graphics</figcaption></figure>
+</div>
 
-**140,977**-byte IPS · **5** stages and **5** bosses redrawn · **256 KB** MegaROM with SCC · no ROM distributed
+## The patch
 
 | | |
 |---|---|
@@ -20,18 +36,6 @@ sounds.
 | output | a 256 KB MegaROM, Konami SCC mapper, sha256 `a36c3fffc02a080bb341ed1fded4609107cc32d71db6a0875b95f0e551d40551` |
 | needs | an MSX2 with 128 KB of VRAM and the SCC (a flash cartridge with SCC, such as a MegaFlashROM SCC+ or a Carnivore2) |
 | tested | in openMSX, with C-BIOS and with a Sony HB-F900: the whole game, the five stages and their bosses; **not yet on real hardware** |
-
-## In pictures
-
-![The Konami logo with the double wave](imagenes/konami.png) ![The title](imagenes/titulo.png)
-
-![Stage 1 and its boss](imagenes/fase1.png) ![Stage 2 and its boss](imagenes/fase2.png)
-
-![Stage 3](imagenes/fase3.png) ![Stage 4](imagenes/fase4.png)
-
-![Stage 5](imagenes/fase5.png) ![The boss of stage 5](imagenes/jefe5.png)
-
-![The credits](imagenes/creditos.png)
 
 ## What changes
 

@@ -79,11 +79,16 @@ footer{margin-top:5rem;padding-top:1.5rem;border-top:1px solid var(--linea);
 .aviso{background:#3a2a10;border-left:3px solid var(--oro);margin:1.5rem auto;
   padding:1rem 1.2rem;max-width:900px;border-radius:4px}
 .aviso p{margin:0;color:var(--tinta);font-size:15px;line-height:1.65}
-.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:1.5rem;margin:1.5rem 0}
-.galeria figure{margin:0}
-.galeria img{width:100%;height:auto;image-rendering:pixelated;
-  border:1px solid var(--linea);border-radius:3px}
-.galeria figcaption{color:var(--suave);font-size:13px;margin-top:.5rem}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));
+  gap:2rem 1.5rem;margin:1.5rem 0}
+.galeria figure{margin:0;background:var(--panel);box-shadow:0 0 0 1px var(--linea)}
+.galeria img{width:100%;height:auto;image-rendering:pixelated}
+.galeria figcaption{color:var(--suave);font-size:13px;padding:.6rem .8rem;
+  border-top:1px solid var(--linea)}
+.galeria figcaption b{color:var(--oro);font-weight:400}
+.descarga{display:inline-block;padding:.7rem 1.4rem;border:1px solid var(--rojo);
+  color:var(--rojo);text-decoration:none;letter-spacing:.08em;text-transform:uppercase;
+  font-size:13px}
+.descarga:hover,.descarga:focus{background:var(--rojo);color:var(--fondo)}
 audio{display:block;width:100%;max-width:640px;margin:.75rem 0 1.5rem}
 """

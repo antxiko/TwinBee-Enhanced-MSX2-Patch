@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Twin Bee Enhanced (MSX2) — scroll al pixel, musica SCC y graficos de Guantxip — Twin Bee Enhanced (MSX2) (Konami, 1986)</title>
+<title>index — Twin Bee Enhanced (MSX2) (Konami, 1986)</title>
 <style>
 :root{--tinta:#cfd0d4;--suave:#83868f;--fondo:#000;--panel:#0c0e13;--linea:#23262e;
   --rojo:#ff897d;--cyan:#65dbef;--verde:#3eb849;--oro:#ded087}
@@ -74,27 +74,47 @@ footer{margin-top:5rem;padding-top:1.5rem;border-top:1px solid var(--linea);
 .aviso{background:#3a2a10;border-left:3px solid var(--oro);margin:1.5rem auto;
   padding:1rem 1.2rem;max-width:900px;border-radius:4px}
 .aviso p{margin:0;color:var(--tinta);font-size:15px;line-height:1.65}
-.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:1.5rem;margin:1.5rem 0}
-.galeria figure{margin:0}
-.galeria img{width:100%;height:auto;image-rendering:pixelated;
-  border:1px solid var(--linea);border-radius:3px}
-.galeria figcaption{color:var(--suave);font-size:13px;margin-top:.5rem}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));
+  gap:2rem 1.5rem;margin:1.5rem 0}
+.galeria figure{margin:0;background:var(--panel);box-shadow:0 0 0 1px var(--linea)}
+.galeria img{width:100%;height:auto;image-rendering:pixelated}
+.galeria figcaption{color:var(--suave);font-size:13px;padding:.6rem .8rem;
+  border-top:1px solid var(--linea)}
+.galeria figcaption b{color:var(--oro);font-weight:400}
+.descarga{display:inline-block;padding:.7rem 1.4rem;border:1px solid var(--rojo);
+  color:var(--rojo);text-decoration:none;letter-spacing:.08em;text-transform:uppercase;
+  font-size:13px}
+.descarga:hover,.descarga:focus{background:var(--rojo);color:var(--fondo)}
 audio{display:block;width:100%;max-width:640px;margin:.75rem 0 1.5rem}
 </style>
 <div class="w"><nav class="top"><a href="index.html" style=color:var(--tinta)>Portada</a><a href="../index.html" style="margin-left:auto;color:var(--oro)">English</a></nav>
-<h1 id="twin-bee-enhanced-msx2-scroll-al-pixel-musica-scc-y-graficos-de-guantxip">Twin Bee Enhanced (MSX2) — scroll al pixel, musica SCC y graficos de Guantxip</h1>
-<p><em>(Also available <a href="../index.html">in English</a>.)</em></p>
-<p>Un parche extraoficial que convierte <b>Twin Bee</b> (Konami, 1986), el cartucho de 32 KB de MSX, en una version mejorada para <b>MSX2</b>: el decorado se desplaza pixel a pixel sobre una pantalla de mapa de bits, las cinco fases y sus cinco jefes llevan graficos nuevos adaptados por <b>Guantxip</b>, los sprites tienen tres colores por linea y la musica suena por el <b>SCC</b>, como en la version de la Konami Game Collection.</p>
-<p><b>La web</b>: https://antxiko.github.io/TwinBee-Enhanced-MSX2-Patch/es/ · <b>Descarga el parche</b>: <a href="https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch/raw/main/ips/twinbee_enhanced_msx2.ips">ips/twinbee_enhanced_msx2.ips</a></p>
-<p>IPS de <b>140.977</b> bytes · <b>5</b> fases y <b>5</b> jefes redibujados · MegaROM de <b>256 KB</b> con SCC · no se distribuye ninguna ROM</p>
-<table><tr><th></th><th></th></tr><tr><td>el parche</td><td><code>ips/twinbee_enhanced_msx2.ips</code>, 140.977 bytes</td></tr><tr><td>entrada</td><td>tu volcado de <em>Twin Bee</em>, 32.768 bytes, sha256 <code>02bdce8ceafe6af05a45b61a689e78807551df663afd152090f7cd9cac827dd4</code></td></tr><tr><td>salida</td><td>una MegaROM de 256 KB, mapper Konami SCC, sha256 <code>a36c3fffc02a080bb341ed1fded4609107cc32d71db6a0875b95f0e551d40551</code></td></tr><tr><td>hace falta</td><td>un MSX2 con 128 KB de VRAM y el SCC (un cartucho flash con SCC, como un MegaFlashROM SCC+ o un Carnivore2)</td></tr><tr><td>probado</td><td>en openMSX, con C-BIOS y con un Sony HB-F900: el juego entero, las cinco fases y sus jefes; <b>todavia no en un MSX real</b></td></tr></table>
+<header class="top">
+<img src="../imagenes/00-titulo.png" alt="La pantalla del titulo de Twin Bee Enhanced">
+<h1>Twin Bee Enhanced (MSX2)</h1>
+<p class="claim">El <b>Twin Bee</b> de Konami (1986), el cartucho de 32 KB de MSX, convertido en un juego mejorado para <b>MSX2</b>: el decorado se desplaza <b>pixel a pixel</b> sobre una pantalla de mapa de bits, las cinco fases y sus cinco jefes llevan <b>los graficos de Guantxip</b>, los sprites tienen <b>tres colores por linea</b> y la musica suena por el <b>SCC</b>, como en la Konami Game Collection.</p>
+<p><a class="descarga" href="https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch/raw/main/ips/twinbee_enhanced_msx2.ips">Descarga el parche IPS</a></p>
+<div class="ficha"><span>Konami &middot; 1986 &middot; RC-740</span><span>parche extraoficial</span><span><b>MSX2</b> + SCC</span><span>no se distribuye ninguna ROM</span><span><a href="https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch">El repositorio</a></span></div>
+</header>
+<div class="cifras"><div class="cifra"><b>140.977</b><span>bytes de IPS</span></div><div class="cifra"><b>5</b><span>fases redibujadas</span></div><div class="cifra"><b>5</b><span>jefes redibujados</span></div><div class="cifra"><b>256 KB</b><span>MegaROM con SCC</span></div><div class="cifra"><b>0</b><span>ROMs distribuidas</span></div></div>
 <h2 id="en-imagenes">En imagenes</h2>
-<p><img src="../imagenes/konami.png" alt="El logo de Konami de la doble ola"> <img src="../imagenes/titulo.png" alt="El titulo"></p>
-<p><img src="../imagenes/fase1.png" alt="La fase 1 y su jefe"> <img src="../imagenes/fase2.png" alt="La fase 2 y su jefe"></p>
-<p><img src="../imagenes/fase3.png" alt="La fase 3"> <img src="../imagenes/fase4.png" alt="La fase 4"></p>
-<p><img src="../imagenes/fase5.png" alt="La fase 5"> <img src="../imagenes/jefe5.png" alt="El jefe de la fase 5"></p>
-<p><img src="../imagenes/creditos.png" alt="Los creditos"></p>
+<div class="galeria">
+<figure><img src="../imagenes/01-konami.png" alt="El logo de Konami con la doble ola, apareciendo como en Salamander" loading="lazy"><figcaption><b>El logo de Konami</b> con la doble ola, apareciendo como en <i>Salamander</i></figcaption></figure>
+<figure><img src="../imagenes/00-titulo.png" alt="El titulo, con el logo nuevo" loading="lazy"><figcaption><b>El titulo</b>, con el logo nuevo</figcaption></figure>
+<figure><img src="../imagenes/03-fase1.png" alt="La fase 1" loading="lazy"><figcaption><b>La fase 1</b></figcaption></figure>
+<figure><img src="../imagenes/04-jefe1.png" alt="El jefe de la fase 1" loading="lazy"><figcaption><b>El jefe de la fase 1</b></figcaption></figure>
+<figure><img src="../imagenes/05-fase2.png" alt="La fase 2" loading="lazy"><figcaption><b>La fase 2</b></figcaption></figure>
+<figure><img src="../imagenes/06-jefe2.png" alt="El jefe de la fase 2" loading="lazy"><figcaption><b>El jefe de la fase 2</b></figcaption></figure>
+<figure><img src="../imagenes/07-fase3.png" alt="La fase 3" loading="lazy"><figcaption><b>La fase 3</b></figcaption></figure>
+<figure><img src="../imagenes/08-jefe3.png" alt="El jefe de la fase 3" loading="lazy"><figcaption><b>El jefe de la fase 3</b></figcaption></figure>
+<figure><img src="../imagenes/09-fase4.png" alt="La fase 4" loading="lazy"><figcaption><b>La fase 4</b></figcaption></figure>
+<figure><img src="../imagenes/10-jefe4.png" alt="El jefe de la fase 4" loading="lazy"><figcaption><b>El jefe de la fase 4</b></figcaption></figure>
+<figure><img src="../imagenes/11-fase5.png" alt="La fase 5" loading="lazy"><figcaption><b>La fase 5</b></figcaption></figure>
+<figure><img src="../imagenes/12-jefe5.png" alt="El jefe de la fase 5" loading="lazy"><figcaption><b>El jefe de la fase 5</b></figcaption></figure>
+<figure><img src="../imagenes/13-pausa.png" alt="La pausa (F1), con el marcador" loading="lazy"><figcaption><b>La pausa</b> (F1), con el marcador</figcaption></figure>
+<figure><img src="../imagenes/14-creditos.png" alt="Los creditos, con los graficos" loading="lazy"><figcaption><b>Los creditos</b>, con los graficos</figcaption></figure>
+</div>
+<h2 id="el-parche">El parche</h2>
+<table><tr><th></th><th></th></tr><tr><td>el parche</td><td><code>ips/twinbee_enhanced_msx2.ips</code>, 140.977 bytes</td></tr><tr><td>entrada</td><td>tu volcado de <em>Twin Bee</em>, 32.768 bytes, sha256 <code>02bdce8ceafe6af05a45b61a689e78807551df663afd152090f7cd9cac827dd4</code></td></tr><tr><td>salida</td><td>una MegaROM de 256 KB, mapper Konami SCC, sha256 <code>a36c3fffc02a080bb341ed1fded4609107cc32d71db6a0875b95f0e551d40551</code></td></tr><tr><td>hace falta</td><td>un MSX2 con 128 KB de VRAM y el SCC (un cartucho flash con SCC, como un MegaFlashROM SCC+ o un Carnivore2)</td></tr><tr><td>probado</td><td>en openMSX, con C-BIOS y con un Sony HB-F900: el juego entero, las cinco fases y sus jefes; <b>todavia no en un MSX real</b></td></tr></table>
 <h2 id="que-cambia">Que cambia</h2>
 <ul><li><b>El decorado</b> es un mapa de bits de Screen 5 que el VDP desplaza linea a linea (registro 23), en lugar del desplazamiento por casillas de MSX1. Los mapas de las cinco fases son de Guantxip.</li><li><b>Los sprites</b>: naves, enemigos, campanas, nubes y jefes son dibujos de Guantxip, con dos sprites superpuestos para que cada linea tenga tres colores. TwinBee y WinBee son las mismas en todas las fases.</li><li><b>Los cinco jefes</b> llevan sus dibujos nuevos, con colores propios mientras estan en pantalla.</li><li><b>La musica</b> es la version SCC de la <em>Konami Game Collection Vol. 3</em>, dentro del propio cartucho.</li><li><b>La presentacion</b>: una intro, el logo nuevo del titulo y el logo de Konami de los juegos posteriores, el de la doble ola, apareciendo como en <em>Salamander</em>.</li><li><b>Los creditos</b> del final incluyen los graficos.</li><li><b>La pausa</b> (F1) muestra el marcador en un recuadro negro: la fase, el record, la puntuacion y las vidas que quedan.</li><li><b>Cuando mas de ocho sprites coinciden en una linea</b> se turnan parpadeando en vez de desaparecer, y las dos mitades de cada sprite de tres colores nunca se separan.</li></ul>
 <h2 id="aplicarlo">Aplicarlo</h2>

@@ -140,8 +140,8 @@ def convierte(texto, titulo, actual, idioma="en"):
             while i < len(ln) and ln[i].startswith(">"):
                 cita.append(ln[i].lstrip("> ").rstrip()); i += 1
             out.append(f"<blockquote>{enlinea(' '.join(cita))}</blockquote>"); continue
-        if l.lstrip().startswith("<audio "):        # un reproductor puesto a mano
-            out.append(l.strip()); i += 1; continue
+        if l.lstrip().startswith("<"):              # HTML puesto a mano (cabecera,
+            out.append(l.strip()); i += 1; continue   # cifras, galeria, reproductor)
         if re.match(r"^ {4,}\S", l):                # bloque de codigo indentado
             cuerpo = []
             while i < len(ln) and re.match(r"^ {4,}\S", ln[i]):

@@ -1,17 +1,33 @@
-# Twin Bee Enhanced (MSX2) — scroll al pixel, musica SCC y graficos de Guantxip
+<header class="top">
+<img src="../imagenes/00-titulo.png" alt="La pantalla del titulo de Twin Bee Enhanced">
+<h1>Twin Bee Enhanced (MSX2)</h1>
+<p class="claim">El <b>Twin Bee</b> de Konami (1986), el cartucho de 32 KB de MSX, convertido en un juego mejorado para <b>MSX2</b>: el decorado se desplaza <b>pixel a pixel</b> sobre una pantalla de mapa de bits, las cinco fases y sus cinco jefes llevan <b>los graficos de Guantxip</b>, los sprites tienen <b>tres colores por linea</b> y la musica suena por el <b>SCC</b>, como en la Konami Game Collection.</p>
+<p><a class="descarga" href="https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch/raw/main/ips/twinbee_enhanced_msx2.ips">Descarga el parche IPS</a></p>
+<div class="ficha"><span>Konami &middot; 1986 &middot; RC-740</span><span>parche extraoficial</span><span><b>MSX2</b> + SCC</span><span>no se distribuye ninguna ROM</span><span><a href="https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch">El repositorio</a></span></div>
+</header>
 
-*(Also available [in English](../index.html).)*
+<div class="cifras"><div class="cifra"><b>140.977</b><span>bytes de IPS</span></div><div class="cifra"><b>5</b><span>fases redibujadas</span></div><div class="cifra"><b>5</b><span>jefes redibujados</span></div><div class="cifra"><b>256 KB</b><span>MegaROM con SCC</span></div><div class="cifra"><b>0</b><span>ROMs distribuidas</span></div></div>
 
-Un parche extraoficial que convierte **Twin Bee** (Konami, 1986), el cartucho
-de 32 KB de MSX, en una version mejorada para **MSX2**: el decorado se desplaza
-pixel a pixel sobre una pantalla de mapa de bits, las cinco fases y sus cinco
-jefes llevan graficos nuevos adaptados por **Guantxip**, los sprites tienen
-tres colores por linea y la musica suena por el **SCC**, como en la version de
-la Konami Game Collection.
+## En imagenes
 
-**La web**: https://antxiko.github.io/TwinBee-Enhanced-MSX2-Patch/es/ · **Descarga el parche**: [ips/twinbee_enhanced_msx2.ips](https://github.com/antxiko/TwinBee-Enhanced-MSX2-Patch/raw/main/ips/twinbee_enhanced_msx2.ips)
+<div class="galeria">
+<figure><img src="../imagenes/01-konami.png" alt="El logo de Konami con la doble ola, apareciendo como en Salamander" loading="lazy"><figcaption><b>El logo de Konami</b> con la doble ola, apareciendo como en <i>Salamander</i></figcaption></figure>
+<figure><img src="../imagenes/00-titulo.png" alt="El titulo, con el logo nuevo" loading="lazy"><figcaption><b>El titulo</b>, con el logo nuevo</figcaption></figure>
+<figure><img src="../imagenes/03-fase1.png" alt="La fase 1" loading="lazy"><figcaption><b>La fase 1</b></figcaption></figure>
+<figure><img src="../imagenes/04-jefe1.png" alt="El jefe de la fase 1" loading="lazy"><figcaption><b>El jefe de la fase 1</b></figcaption></figure>
+<figure><img src="../imagenes/05-fase2.png" alt="La fase 2" loading="lazy"><figcaption><b>La fase 2</b></figcaption></figure>
+<figure><img src="../imagenes/06-jefe2.png" alt="El jefe de la fase 2" loading="lazy"><figcaption><b>El jefe de la fase 2</b></figcaption></figure>
+<figure><img src="../imagenes/07-fase3.png" alt="La fase 3" loading="lazy"><figcaption><b>La fase 3</b></figcaption></figure>
+<figure><img src="../imagenes/08-jefe3.png" alt="El jefe de la fase 3" loading="lazy"><figcaption><b>El jefe de la fase 3</b></figcaption></figure>
+<figure><img src="../imagenes/09-fase4.png" alt="La fase 4" loading="lazy"><figcaption><b>La fase 4</b></figcaption></figure>
+<figure><img src="../imagenes/10-jefe4.png" alt="El jefe de la fase 4" loading="lazy"><figcaption><b>El jefe de la fase 4</b></figcaption></figure>
+<figure><img src="../imagenes/11-fase5.png" alt="La fase 5" loading="lazy"><figcaption><b>La fase 5</b></figcaption></figure>
+<figure><img src="../imagenes/12-jefe5.png" alt="El jefe de la fase 5" loading="lazy"><figcaption><b>El jefe de la fase 5</b></figcaption></figure>
+<figure><img src="../imagenes/13-pausa.png" alt="La pausa (F1), con el marcador" loading="lazy"><figcaption><b>La pausa</b> (F1), con el marcador</figcaption></figure>
+<figure><img src="../imagenes/14-creditos.png" alt="Los creditos, con los graficos" loading="lazy"><figcaption><b>Los creditos</b>, con los graficos</figcaption></figure>
+</div>
 
-IPS de **140.977** bytes · **5** fases y **5** jefes redibujados · MegaROM de **256 KB** con SCC · no se distribuye ninguna ROM
+## El parche
 
 | | |
 |---|---|
@@ -20,18 +36,6 @@ IPS de **140.977** bytes · **5** fases y **5** jefes redibujados · MegaROM de 
 | salida | una MegaROM de 256 KB, mapper Konami SCC, sha256 `a36c3fffc02a080bb341ed1fded4609107cc32d71db6a0875b95f0e551d40551` |
 | hace falta | un MSX2 con 128 KB de VRAM y el SCC (un cartucho flash con SCC, como un MegaFlashROM SCC+ o un Carnivore2) |
 | probado | en openMSX, con C-BIOS y con un Sony HB-F900: el juego entero, las cinco fases y sus jefes; **todavia no en un MSX real** |
-
-## En imagenes
-
-![El logo de Konami de la doble ola](../imagenes/konami.png) ![El titulo](../imagenes/titulo.png)
-
-![La fase 1 y su jefe](../imagenes/fase1.png) ![La fase 2 y su jefe](../imagenes/fase2.png)
-
-![La fase 3](../imagenes/fase3.png) ![La fase 4](../imagenes/fase4.png)
-
-![La fase 5](../imagenes/fase5.png) ![El jefe de la fase 5](../imagenes/jefe5.png)
-
-![Los creditos](../imagenes/creditos.png)
 
 ## Que cambia
 
